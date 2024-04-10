@@ -192,6 +192,6 @@ app.post("/login", upload.single("avatar"), async (req, res) => {
 app.all("*", (req, res) => {
   return res.status(404).json({ status: "Failed", message: "page Not Found" });
 });
-app.listen(process.env.PORT || 8000, () => {
+app.listen(process.env.PORT || 4000, () => {
   console.log("done");
 });
